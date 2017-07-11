@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.squareup.mindLibImage" >
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <application>
+        <provider
+            android:name="com.mindlibrary.images.MindImageLibraryProvider"
+            android:authorities="com.squareup.mindLibImage.com.squareup.mindLibImage"
+            android:exported="false" />
+    </application>
+
+</manifest>

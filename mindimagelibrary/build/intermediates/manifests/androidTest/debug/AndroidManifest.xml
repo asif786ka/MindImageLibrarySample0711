@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.squareup.mindLibImage.test" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.squareup.mindLibImage.test"
+        android:targetPackage="com.squareup.mindLibImage.test" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+
+        <provider
+            android:name="com.mindlibrary.images.MindImageLibraryProvider"
+            android:authorities="com.squareup.mindLibImage.com.squareup.mindLibImage"
+            android:exported="false" />
+    </application>
+
+</manifest>
